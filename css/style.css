@@ -13,6 +13,7 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         height: 10%;
         position: fixed;
         background: linear-gradient(0deg, #eee, #fff);
+        box-shadow: 0 -5px 10px #000;
         z-index: 1;
     }
 
@@ -70,13 +71,23 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         right: 54%;
     }
 
-    #lugar {display: flex; flex-flow: column; align-items: center;}
+    #lugar {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 7% 0;
+        font-family: 'Roboto', sans-serif;
+        color: #6581ff;
+        font-size: 15pt;
+    }
     #lugar ul {
         width: 100%;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
+        margin-top: 50px;
     }
+    #lugar li img {height: 100%;}
     #lugar li {
         width: 350px;
         height: 350px;
@@ -86,6 +97,18 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         margin: 10px;
         box-shadow: 2px 2px 5px #6581ff;
         overflow: hidden;
+    }
+    #lugar figcaption {
+        display: block;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+        font-size: 15pt;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px #000;
+        background: #000000ad;
+        padding: 10px 0;
     }
 }
 
