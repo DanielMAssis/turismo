@@ -102,7 +102,7 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         display: block;
         width: 100%;
         position: relative;
-        bottom: 45px;
+        bottom: 44px;
         font-size: 15pt;
         text-align: center;
         color: #fff;
@@ -110,6 +110,27 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         background: #000000ad;
         padding: 10px 0;
     }
+
+    #contato {
+        height: 200px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        font-size: 15pt;
+        font-family: 'Roboto', sans-serif;
+        padding: 5% 0;
+        border-top: 1px solid #244cff;
+        background: #111;
+    }
+    #contato span {color: #6581ff;}
+    #contato ul {
+        display: flex;
+        flex-flow: row;
+    }
+    #contato li {margin: 10px 20px;}
+    #contato i {font-size: 40px;}
 }
 
 @media only all and (max-width: 915px){
