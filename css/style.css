@@ -8,6 +8,8 @@ ul li, a {list-style: none; text-decoration: none;}
 hr{width: 90px; height: 3px; background: #244cff; border: none;}
 
 @media only all and (min-width: 915px){
+    .fa-bars{display: none;}
+    #menu #mobile {display: none;}
     #menu {
         width: 100%;
         height: 10%;
@@ -17,7 +19,7 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         z-index: 1;
     }
 
-    #menu ul {
+    #menu #web {
         height: 100%;
         display: flex;
         justify-content: flex-end;
@@ -125,13 +127,101 @@ hr{width: 90px; height: 3px; background: #244cff; border: none;}
         background: #111;
     }
     #contato span {color: #6581ff;}
-    #contato ul {
-        display: flex;
-        flex-flow: row;
-    }
+    #contato ul {display: flex; flex-flow: row;}
     #contato li {margin: 10px 20px;}
     #contato i {font-size: 40px;}
 }
 
 @media only all and (max-width: 915px){
+    .fa-bars {
+        display: flex;
+        position: fixed;
+        border-radius: 50%;
+        font-size: 20pt;
+        padding: 15px;
+        color: #fff;
+        top: 15px;
+        right: 15px;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+    #menu #web {display: none;}
+    #menu #mobile {width: 100%; display: none; position: fixed; background: #222; z-index: 1;}
+    #menu li {
+        color: #fff;
+        font-size: 15pt;
+        padding: 15px 10px;
+        border-bottom: 1px solid #111;
+    }
+
+    #inicio {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/aviao.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 -5px 10px #000;
+    }
+    #inicio p {width: 60%; color: #fff; text-align: center; font-size: 30pt; padding: 25% 15px; text-shadow: 0 0 5px #000;}
+
+    #lugar {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 7% 0;
+        font-family: 'Roboto', sans-serif;
+        color: #6581ff;
+        font-size: 15pt;
+    }
+    #lugar ul {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #lugar li img {height: 100%;}
+    #lugar li {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 10px;
+        box-shadow: 2px 2px 5px #6581ff;
+        overflow: hidden;
+    }
+    #lugar figcaption {
+        display: block;
+        width: 100%;
+        position: relative;
+        bottom: 44px;
+        font-size: 15pt;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px #000;
+        background: #000000ad;
+        padding: 10px 0;
+    }
+
+    #contato {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        color: #fff;
+        font-size: 15pt;
+        font-family: 'Roboto', sans-serif;
+        padding: 10% 0;
+        border-top: 1px solid #244cff;
+        background: #111;
+    }
+    #contato p {width: 90%;}
+    #contato span {color: #6581ff;}
+    #contato ul {display: flex; flex-flow: row;}
+    #contato li {margin: 10px 20px;}
+    #contato i {font-size: 40px;}
 }
